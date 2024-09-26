@@ -106,7 +106,7 @@
                             </a>
                             <ul aria-expanded="false" class="collapse first-level">
                                 <li class="sidebar-item">
-                                    <a href="/" class="sidebar-link">
+                                    <a href="/slider" class="sidebar-link">
                                         <div class="round-16 d-flex align-items-center justify-content-center">
                                             <i class="ti ti-circle"></i>
                                         </div>
@@ -114,13 +114,83 @@
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="/" class="sidebar-link">
+                                    <a href="/layanan" class="sidebar-link">
                                         <div class="round-16 d-flex align-items-center justify-content-center">
                                             <i class="ti ti-circle"></i>
                                         </div>
                                         <span class="hide-menu">Layanan</span>
                                     </a>
                                 </li>
+                                <li class="sidebar-item">
+                                    <a href="/kelebihan" class="sidebar-link">
+                                        <div class="round-16 d-flex align-items-center justify-content-center">
+                                            <i class="ti ti-circle"></i>
+                                        </div>
+                                        <span class="hide-menu">Kelebihan</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="/mitra" class="sidebar-link">
+                                        <div class="round-16 d-flex align-items-center justify-content-center">
+                                            <i class="ti ti-circle"></i>
+                                        </div>
+                                        <span class="hide-menu">Mitra</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
+                                <span class="d-flex">
+                                    <i class="ti ti-brand-blogger"></i>
+                                </span>
+                                <span class="hide-menu">Blog</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item">
+                                    <a href="/kategori_berita" class="sidebar-link">
+                                        <div class="round-16 d-flex align-items-center justify-content-center">
+                                            <i class="ti ti-circle"></i>
+                                        </div>
+                                        <span class="hide-menu">Kategori</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="/berita" class="sidebar-link">
+                                        <div class="round-16 d-flex align-items-center justify-content-center">
+                                            <i class="ti ti-circle"></i>
+                                        </div>
+                                        <span class="hide-menu">Berita</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
+                                <span class="d-flex">
+                                    <i class="ti ti-photo"></i>
+                                </span>
+                                <span class="hide-menu">Galeri</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item">
+                                    <a href="/kategori_galeri" class="sidebar-link">
+                                        <div class="round-16 d-flex align-items-center justify-content-center">
+                                            <i class="ti ti-circle"></i>
+                                        </div>
+                                        <span class="hide-menu">Kategori</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="/galeri" class="sidebar-link">
+                                        <div class="round-16 d-flex align-items-center justify-content-center">
+                                            <i class="ti ti-circle"></i>
+                                        </div>
+                                        <span class="hide-menu">Galeri</span>
+                                    </a>
+                                </li>
+
                             </ul>
                         </li>
 
@@ -170,7 +240,7 @@
                                 alt="modernize-img" />
                         </div>
                         <div class="john-title">
-                            <h6 class="mb-0 fs-4 fw-semibold">Mathew</h6>
+                            <h6 class="mb-0 fs-4 fw-semibold">Superadmin</h6>
                             <span class="fs-2">Designer</span>
                         </div>
                         <button class="border-0 bg-transparent text-primary ms-auto" tabindex="0" type="button"
@@ -353,7 +423,7 @@
                                                         class="rounded-circle" width="80" height="80"
                                                         alt="modernize-img" />
                                                     <div class="ms-3">
-                                                        <h5 class="mb-1 fs-3">Mathew Anderson</h5>
+                                                        <h5 class="mb-1 fs-3">Superadmin Astacode</h5>
                                                         <span class="mb-1 d-block">Designer</span>
                                                         <p class="mb-0 d-flex align-items-center gap-2">
                                                             <i class="ti ti-mail fs-4"></i> info@modernize.com
@@ -1103,7 +1173,7 @@
                                                         class="rounded-circle" width="80" height="80"
                                                         alt="modernize-img" />
                                                     <div class="ms-3">
-                                                        <h5 class="mb-1 fs-3">Mathew Anderson</h5>
+                                                        <h5 class="mb-1 fs-3">Superadmin Astacode</h5>
                                                         <span class="mb-1 d-block">Designer</span>
                                                         <p class="mb-0 d-flex align-items-center gap-2">
                                                             <i class="ti ti-mail fs-4"></i> info@modernize.com
