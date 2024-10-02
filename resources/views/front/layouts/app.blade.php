@@ -27,10 +27,16 @@
 
     <link rel="stylesheet" href="{{ asset('themplete/front') }}/assets/css/style.css">
     <link rel="stylesheet" href="{{ asset('themplete/front') }}/assets/css/responsive.css">
-
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            /* Untuk teks menjadi warna putih agar terlihat */
+        }
+    </style>
 </head>
 
-<body class="body-dark-bg">
+<body class="">
 
     <!-- preloader -->
     <div id="preloader">
@@ -329,7 +335,9 @@
                                     <div class="footer-widget__links-box">
                                         <ul>
                                             @foreach ($layanan as $p)
-                                                <li><a href="https://wa.me/{{ $profil->no_wa }}">{{ $p->nama_layanan }}</a></li>
+                                                <li><a
+                                                        href="https://wa.me/{{ $profil->no_wa }}">{{ $p->nama_layanan }}</a>
+                                                </li>
                                             @endforeach
                                         </ul>
                                     </div>
