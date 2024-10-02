@@ -581,9 +581,14 @@
         $(document).ready(function() {
             $('#btn-save-edit').click(function(e) {
                 e.preventDefault();
+
                 const tombolUpdate = $('#btn-save-edit');
                 var id = $('#id').val();
                 var formData = new FormData($('#form-edit')[0]);
+
+                // Ubah teks tombol menjadi "Updating..." dan disable tombolnya
+                tombolUpdate.text('Updating...');
+                tombolUpdate.prop('disabled', true);
 
                 $.ajax({
                     type: 'POST', // Gunakan POST karena kita override dengan PUT
@@ -596,7 +601,6 @@
                     processData: false,
                     beforeSend: function() {
                         $('form').find('.error-message').remove();
-                        tombolUpdate.prop('disabled', true);
                     },
                     success: function(response) {
                         $('#modal-edit').modal('hide');
@@ -612,13 +616,16 @@
                         });
                     },
                     complete: function() {
+                        // Kembalikan teks tombol ke "Update" dan enable tombolnya
+                        tombolUpdate.text('Update');
                         tombolUpdate.prop('disabled', false);
                     },
                     error: function(xhr) {
-                        // Jika bukan error 422 (validasi) tetap sembunyikan modal
+                        // Jika bukan error 422 (validasi), tetap sembunyikan modal
                         if (xhr.status !== 422) {
                             $('#modal-edit').modal('hide');
                         }
+
                         var errorMessages = xhr.responseJSON.errors;
                         var errorMessage = '';
 
@@ -638,11 +645,16 @@
                             icon: 'error',
                             confirmButtonText: 'OK'
                         });
+
+                        // Kembalikan tombol ke keadaan semula jika terjadi error
+                        tombolUpdate.text('Update');
+                        tombolUpdate.prop('disabled', false);
                     }
                 });
             });
         });
     </script>
+
 
     {{-- PERINTAH UPDATE DATA --}}
 @endpush

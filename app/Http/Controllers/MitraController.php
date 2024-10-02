@@ -6,8 +6,7 @@ use App\Models\LogHistori;
 use App\Models\Mitra;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Hash;
+ 
 
 class MitraController extends Controller
 {

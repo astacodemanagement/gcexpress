@@ -122,6 +122,30 @@
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
+                                    <a href="/tahap" class="sidebar-link">
+                                        <div class="round-16 d-flex align-items-center justify-content-center">
+                                            <i class="ti ti-circle"></i>
+                                        </div>
+                                        <span class="hide-menu">Tahap</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="/alasan" class="sidebar-link">
+                                        <div class="round-16 d-flex align-items-center justify-content-center">
+                                            <i class="ti ti-circle"></i>
+                                        </div>
+                                        <span class="hide-menu">Alasan</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="/faq" class="sidebar-link">
+                                        <div class="round-16 d-flex align-items-center justify-content-center">
+                                            <i class="ti ti-circle"></i>
+                                        </div>
+                                        <span class="hide-menu">Faq</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
                                     <a href="/kelebihan" class="sidebar-link">
                                         <div class="round-16 d-flex align-items-center justify-content-center">
                                             <i class="ti ti-circle"></i>
@@ -241,7 +265,7 @@
                         </div>
                         <div class="john-title">
                             <h6 class="mb-0 fs-4 fw-semibold">Superadmin</h6>
-                            <span class="fs-2">Designer</span>
+                            <span class="fs-2">Administrator</span>
                         </div>
                         <button class="border-0 bg-transparent text-primary ms-auto" tabindex="0" type="button"
                             aria-label="logout" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="logout">
@@ -424,7 +448,7 @@
                                                         alt="modernize-img" />
                                                     <div class="ms-3">
                                                         <h5 class="mb-1 fs-3">Superadmin Astacode</h5>
-                                                        <span class="mb-1 d-block">Designer</span>
+                                                        <span class="mb-1 d-block">Administrator</span>
                                                         <p class="mb-0 d-flex align-items-center gap-2">
                                                             <i class="ti ti-mail fs-4"></i> info@modernize.com
                                                         </p>
@@ -1174,7 +1198,7 @@
                                                         alt="modernize-img" />
                                                     <div class="ms-3">
                                                         <h5 class="mb-1 fs-3">Superadmin Astacode</h5>
-                                                        <span class="mb-1 d-block">Designer</span>
+                                                        <span class="mb-1 d-block">Administrator</span>
                                                         <p class="mb-0 d-flex align-items-center gap-2">
                                                             <i class="ti ti-mail fs-4"></i> info@modernize.com
                                                         </p>

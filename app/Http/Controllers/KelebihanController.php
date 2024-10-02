@@ -6,8 +6,7 @@ use App\Models\LogHistori;
 use App\Models\Kelebihan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Hash;
+ 
 
 class KelebihanController extends Controller
 {
@@ -15,7 +14,7 @@ class KelebihanController extends Controller
     {
         $title = "Halaman Kelebihan";
         $subtitle = "Menu Kelebihan";
-        // Menampilkan daftar semua kelebihan
+
         $kelebihan = Kelebihan::all();
         return view('back.kelebihan.index', compact('kelebihan','title','subtitle'));
     }
