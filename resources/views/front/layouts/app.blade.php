@@ -62,10 +62,10 @@
         <header class="main-header main-header-one">
             <div id="sticky-header" class="menu-area">
                 <div class="main-header-one__outer">
-                    <div class="logo-box-one">
-                        <div class="logo-box-one__bg"
+                    <div class="logo-box-one" style="background-color: black; height: 100%;">
+                        {{-- <div class="logo-box-one__bg"
                             style="background-image: url({{ asset('themplete/front') }}/assets/img/pattern/logo-box-one-pattern.png);">
-                        </div>
+                        </div> --}}
                         <a href="/">
                             <img src="/upload/profil/{{ $profil->logo }}" alt="Logo" width="80px;">
                         </a>
@@ -78,60 +78,7 @@
                                 <div class="menu-wrap">
                                     <nav class="menu-nav">
                                         <div class="main-header-one__inner">
-                                            <div class="main-header-one__top">
-                                                <div class="main-header-one__top-pattern"
-                                                    style="background-image: url({{ asset('themplete/front') }}/assets/img/pattern/header-pattern.png);">
-                                                </div>
-                                                <div class="main-header-one__top-inner">
-                                                    <div class="main-header-one__top-left">
-                                                        <div class="header-contact-info">
-                                                            <ul>
-                                                                <li>
-                                                                    <div class="icon-box"><span class="icon-pin"></span>
-                                                                    </div>
-                                                                    <p>{{ $profil->alamat }}</p>
-                                                                </li>
-                                                                <li>
-                                                                    <div class="icon-box"><span
-                                                                            class="icon-paper-plane"></span>
-                                                                    </div>
-                                                                    <p><a
-                                                                            href="{{ $profil->email }}">{{ $profil->email }}</a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <div class="icon-box"><span
-                                                                            class="icon-out-call"></span>
-                                                                    </div>
-                                                                    <p><a
-                                                                            href="https://wa.me/{{ $profil->no_wa }}">{{ $profil->no_wa }}</a>
-                                                                    </p>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="main-header-one__top-right">
-                                                        <div class="inner">
-                                                            <div class="header-social-links">
-                                                                <ul>
-                                                                    <li><a href="{{ $profil->facebook }}"><span
-                                                                                class="icon-facebook"></span></a>
-                                                                    </li>
-                                                                    <li><a href="{{ $profil->twitter }}"><span
-                                                                                class="icon-twitter"></span></a>
-                                                                    </li>
-                                                                    <li><a href="{{ $profil->instagram }}"><span
-                                                                                class="icon-instagram"></span></a>
-                                                                    </li>
-                                                                    <li><a href="{{ $profil->linkedin }}"><span
-                                                                                class="icon-linkedin"></span></a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+
 
                                             <div class="main-header-one__bottom">
                                                 <div class="main-header-one__bottom-left">
@@ -241,10 +188,10 @@
 
         @yield('content')
 
-        <footer class="footer-one">
-            <div class="footer-one__bg"
+        <footer class="footer-one" style="background-color: black;">
+            {{-- <div class="footer-one__bg"
                 style="background-image: url(https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1634025439/01gf36esnb7m5jknhf51d2ngrf.jpg);">
-            </div>
+            </div> --}}
             <!-- Start Footer Main -->
             <div class="footer-main">
                 <div class="container">
@@ -408,7 +355,7 @@
                 <div class="container">
                     <div class="footer-bottom__inner">
                         <div class="copyright-text">
-                            <p>© 2023 <a href="{{ asset('themplete/front') }}/index.html">Translo,</a> All Rights
+                            <p>© 2024 <a href="{{ asset('themplete/front') }}/index.html">{{ $profil->nama_perusahaan }}</a> All Rights
                                 Reserved.</p>
                         </div>
 
