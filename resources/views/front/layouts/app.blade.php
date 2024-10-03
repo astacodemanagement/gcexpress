@@ -210,7 +210,7 @@
                                 </div>
                                 <div class="footer-one__top-subscribe">
                                     <form class="footer-one__top-subscribe-form" action="#">
-                                        <input type="email" name="email" placeholder="Masukkan Email">
+                                        <input type="email" name="email" placeholder="Masukkan Email" style="background-color: rgb(44, 41, 41); color:white;">
                                         <button type="submit" class="thm-btn">
                                             <span class="txt">Berlangganan </span> <i
                                                 class="icon-up-right-arrow"></i>

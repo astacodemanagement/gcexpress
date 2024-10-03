@@ -84,12 +84,12 @@
 
                 <div class="footer-one__top-right">
                     <div class="text">
-                        <p>Cari Berdasarkan No Resi Anda</p>
+                        <p style="color:black">Cari Berdasarkan No Resi Anda</p>
                     </div>
-                    <div class="footer-one__top-subscribe">
-                        <form class="footer-one__top-subscribe-form" action="#">
-                            <input type="email" name="email" placeholder="Masukkan No Resi">
-                            <button type="submit" class="thm-btn">
+                    <div class="footer-one__top-subscribe" >
+                        <form class="footer-one__top-subscribe-form" action="#" >
+                            <input type="email" name="email" placeholder="Masukkan No Resi" style="background-color: rgb(44, 41, 41); color:white;">
+                            <button type="submit" class="thm-btn" style="background-color: rgb(44, 41, 41);">
                                 <span class="txt">Cari </span> <i class="icon-up-right-arrow"></i>
                             </button>
                         </form>
@@ -148,14 +148,14 @@
     <!--End About One-->
 
     <!--Start Service One -->
-    <section class="service-one">
+    <section class="service-one" style="background-color:black;">
         <div class="container">
             <div class="service-one__top">
                 <div class="sec-title">
                     <div class="sub-title" style="margin-top: -20px;">
                         <h5><span class="icon-right-arrow-1"></span> Layanan {{ $profil->nama_perusahaan }}</h5>
                     </div>
-                    <h2 style="color:black;">Layanan logistik yang <br> cepat dan profesional</h2>
+                    <h2 style="color:white;">Layanan logistik yang <br> cepat dan profesional</h2>
                 </div>
 
                 <div class="btn-box">
@@ -377,7 +377,7 @@
         <!--Start Brand One-->
         <div class="brand-one" style="margin-top: -200px; margin-bottom:-80px;">
             <div class="sec-title text-center">
-                <h2 style="color:white;">Mitra {{ $profil->nama_perusahaan }}</h2>
+                <h2 style="color:white;">Mitra</h2>
             </div>
             <div class="shape1 float-bob-x"><img
                     src="{{ asset('themplete/front') }}/assets/img/shape/brand-v1-shape1.png" alt=""></div>
@@ -513,7 +513,7 @@
     <!-- End Faq One-->
 
     <!-- Start Blog One-->
-    <section class="blog-one" style="background-color: white;">
+    <section class="blog-one" style="background-color: black;">
         <div class="blog-one__pattern" style="background-image: url(assets/img/pattern/blog-v1-pattern.jpg);"></div>
         <div class="container">
             <div class="blog-one__top">
@@ -521,7 +521,7 @@
                     <div class="sub-title">
                         <h5><span class="icon-right-arrow-1"></span> POSTINGAN TERAKHIR</h5>
                     </div>
-                    <h2 style="">Postingan Terakhir Berita</h2>
+                    <h2 style="color:white;">Postingan Terakhir Berita</h2>
                 </div>
                 <div class="btn-box">
                     <a class="thm-btn" href="/halaman_berita">
