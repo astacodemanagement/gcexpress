@@ -142,7 +142,7 @@
                             </div>
 
                             <!-- Mobile Menu  -->
-                            <div class="mobile-menu">
+                            <div class="mobile-menu" style="background-color: black;">
                                 <nav class="menu-box">
                                     <div class="close-btn"><i class="fas fa-times"></i></div>
                                     {{-- <div class="nav-logo">
