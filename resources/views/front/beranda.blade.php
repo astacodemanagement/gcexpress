@@ -86,9 +86,10 @@
                     <div class="text">
                         <p style="color:black">Cari Berdasarkan No Resi Anda</p>
                     </div>
-                    <div class="footer-one__top-subscribe" >
-                        <form class="footer-one__top-subscribe-form" action="#" >
-                            <input type="email" name="email" placeholder="Masukkan No Resi" style="background-color: rgb(44, 41, 41); color:white;">
+                    <div class="footer-one__top-subscribe">
+                        <form class="footer-one__top-subscribe-form" action="#">
+                            <input type="email" name="email" placeholder="Masukkan No Resi"
+                                style="background-color: rgb(44, 41, 41); color:white;">
                             <button type="submit" class="thm-btn" style="background-color: rgb(44, 41, 41);">
                                 <span class="txt">Cari </span> <i class="icon-up-right-arrow"></i>
                             </button>
@@ -335,7 +336,7 @@
     </section> --}}
     <!--End Cta One-->
     <!--Start Choose Us One-->
-    <section class="choose-us-one" style="background-color: black; " >
+    <section class="choose-us-one" style="background-color: black; ">
         <div class="container">
             <div class="sec-title text-center">
                 <div class="sub-title" style="margin-top: -80px;">
@@ -614,6 +615,244 @@
     </section>
     <!-- End Blog One-->
 
+
+
+
+
+
+    <!--Start Request Services One-->
+    <section class="request-services-one">
+        <div class="request-services-one__bg"
+            style="background-image: url(assets/img/background/request-services-v1-bg.jpg);"></div>
+        <div class="shape1 float-bob-y"><img src="assets/img/shape/request-services-v1-shape1.png" alt=""></div>
+        <div class="container">
+
+            <div class="request-services-one__top">
+                <div class="sec-title">
+                    <div class="sub-title">
+                        <h5><span class="icon-right-arrow-1"></span> Post Terbaru</h5>
+                    </div>
+                    <h2>Informasi Terbaru</h2>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <!--Start Request Services One Form-->
+                <div class="col-xl-12">
+                    <div class="request-services-one__form-box">
+                        <div class="request-services-one__form-tab tabs-box">
+                            <ul class="tab-buttons clearfix list-unstyled">
+                                @foreach ($kategoriBerita as $p)
+                                    <li data-tab="#quote" class="tab-btn active-btn">
+                                        <span>{{ $p->nama_kategori_berita }}</span>
+                                    </li>
+                                    {{-- <li data-tab="#track" class="tab-btn"><span>Track & Trace</span></li> --}}
+                                @endforeach
+                            </ul>
+
+                            <div class="tabs-content">
+                                <!--Start Single Tab-->
+                                <div class="tab active-tab" id="quote">
+                                    <div class="request-services-one__single-tab">
+                                        <div class="row">
+                                            <!-- Kolom gambar (4 col) -->
+                                            <div class="col-md-4">
+                                                <!-- Gambar 1 -->
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMLvMrtCT8eSK6uQ9VRAFcabuYxoVKIpuipA&s"
+                                                     alt="Gambar 1" class="img-fluid" style="margin-bottom: 20px; border-radius: 10px;">
+                                                <!-- Gambar 2 -->
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMLvMrtCT8eSK6uQ9VRAFcabuYxoVKIpuipA&s"
+                                                     alt="Gambar 2" class="img-fluid" style="border-radius: 10px;">
+                                            </div>
+
+                                            <!-- Kolom berita (8 col) -->
+                                            <div class="col-md-8">
+                                                @foreach ($berita as $p)
+                                                    <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px; margin-bottom: 20px; border-bottom: 1px solid #000;">
+                                                        <p style="margin: 0;">
+                                                            <a href="{{ url('/berita/' . $p->id) }}" style="text-decoration: none; color: black;">
+                                                                {{ $p->judul_berita }}
+                                                            </a>
+                                                        </p>
+                                                        <span>{{ $p->tanggal_posting }}</span>
+                                                    </div>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!--End Single Tab-->
+
+                                <!--Start Single Tab-->
+                                {{-- <div class="tab" id="track">
+                                    <div class="request-services-one__single-tab">
+                                        <form id="contact-form2"
+                                            class="default-form2 contact-form-validated request-services-one__form"
+                                            action="assets/inc/sendemail.php" novalidate="novalidate">
+
+                                            <div class="request-services-one__form-top">
+                                                <div class="title-box">
+                                                    <h3>General Information:</h3>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xl-4 col-lg-4 col-md-4">
+                                                        <div class="input-box">
+                                                            <label>Full Name</label>
+                                                            <input type="text" name="name" value=""
+                                                                placeholder="Ronald Richards" required="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-xl-4 col-lg-4 col-md-4">
+                                                        <div class="input-box">
+                                                            <label>Phone Number</label>
+                                                            <input type="text" placeholder="+1256 456 7890"
+                                                                name="phone">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-xl-4 col-lg-4 col-md-4">
+                                                        <div class="input-box">
+                                                            <label>Email Address</label>
+                                                            <input type="email" name="email" value=""
+                                                                placeholder="ronald@gmail.com" required="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-xl-4 col-lg-4 col-md-4">
+                                                        <div class="input-box">
+                                                            <label>Freight Type</label>
+                                                            <div class="select-box">
+                                                                <select class="selectmenu wide">
+                                                                    <option selected="selected">Air Freight</option>
+                                                                    <option>Air Freight</option>
+                                                                    <option>Air Freight</option>
+                                                                    <option>Air Freight</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-xl-4 col-lg-4 col-md-4">
+                                                        <div class="input-box">
+                                                            <label>Departure City</label>
+                                                            <input type="text" placeholder="New York" name="city">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-xl-4 col-lg-4 col-md-4">
+                                                        <div class="input-box">
+                                                            <label>Delivery City</label>
+                                                            <input type="text" placeholder="Las Angle" name="city2">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="request-services-one__form-bottom">
+                                                <div class="title-box">
+                                                    <h3>Dimensions of Departure:</h3>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                                        <div class="input-box">
+                                                            <label>Incoterms</label>
+                                                            <div class="select-box">
+                                                                <select class="selectmenu wide">
+                                                                    <option selected="selected">Value 1</option>
+                                                                    <option>Value 2</option>
+                                                                    <option>Value 3</option>
+                                                                    <option>Value 4</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                                        <div class="input-box">
+                                                            <label>Height</label>
+                                                            <input type="number" placeholder="3" name="height">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                                        <div class="input-box">
+                                                            <label>Width</label>
+                                                            <input type="number" placeholder="3" name="width">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                                        <div class="input-box">
+                                                            <label>Length</label>
+                                                            <input type="number" placeholder="4" name="length">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="request-services-one__form-bottom-tag">
+                                                    <div class="title">
+                                                        <h3>Extra services:</h3>
+                                                    </div>
+
+                                                    <div class="tag-box">
+                                                        <div class="single-tags">
+                                                            <input type="checkbox" name="express-delivery"
+                                                                id="tag_5">
+                                                            <label for="tag_5"><span></span>Express Delivery</label>
+                                                        </div>
+
+                                                        <div class="single-tags">
+                                                            <input type="checkbox" name="express-delivery"
+                                                                id="tag_6">
+                                                            <label for="tag_6"><span></span>Insurance</label>
+                                                        </div>
+
+                                                        <div class="single-tags">
+                                                            <input type="checkbox" name="express-delivery"
+                                                                id="tag_7">
+                                                            <label for="tag_7"><span></span>Packaging</label>
+                                                        </div>
+
+                                                        <div class="single-tags">
+                                                            <input type="checkbox" name="express-delivery"
+                                                                id="tag_8">
+                                                            <label for="tag_8"><span></span>Fragile</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-6 col-lg-6 col-md-6">
+                                                    <div class="request-services-one__form-btn">
+                                                        <button class="thm-btn" type="submit"
+                                                            data-loading-text="Please wait...">
+                                                            <span class="txt">Submit Now</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div> --}}
+                                <!--End Single Tab-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Request Services One Form-->
+
+
+            </div>
+        </div>
+    </section>
+    <!--End Request Services One-->
 
 
 
