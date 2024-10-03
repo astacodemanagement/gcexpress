@@ -372,12 +372,12 @@
     </section>
     <!--End Choose Us One-->
 
-    <section class="testimonials-two" style="background-color:white;">
+    <section class="testimonials-two" style="background-color:black; color:white;">
 
         <!--Start Brand One-->
         <div class="brand-one" style="margin-top: -200px; margin-bottom:-80px;">
             <div class="sec-title text-center">
-                <h2 style="color:black;">Mitra {{ $profil->nama_perusahaan }}</h2>
+                <h2 style="color:white;">Mitra {{ $profil->nama_perusahaan }}</h2>
             </div>
             <div class="shape1 float-bob-x"><img
                     src="{{ asset('themplete/front') }}/assets/img/shape/brand-v1-shape1.png" alt=""></div>
