@@ -24,7 +24,7 @@
 
 
 
-/*** 
+/***
 ====================================================================
 	Css Files
 ====================================================================
@@ -52,7 +52,7 @@
     --thm-heading-font: 'Rubik', sans-serif;
     --thm-primary: #FFD550;
     --thm-primary-rgb: 255, 213, 80;
-    --thm-secondary: #186265;
+    --thm-secondary: #12191a;
     --thm-secondary-rgb: 24, 98, 101;
     --thm-body-font-color: #60666C;
     --thm-paragraph-color: #60666C;
@@ -62,7 +62,7 @@
     --thm-heading-font-weight: 700;
     --thm-body-background: #ffffff;
     --thm-bg-one: #0D4250;
-    --thm-bg-two: #186265;
+    --thm-bg-two: #12191a;
     --thm-white: #ffffff;
     --thm-black: #0D4250;
     --thm-blue: #0d6efd;

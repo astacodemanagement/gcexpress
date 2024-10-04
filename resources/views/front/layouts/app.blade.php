@@ -33,6 +33,44 @@
             color: white;
             /* Untuk teks menjadi warna putih agar terlihat */
         }
+
+        .main-header-one__bottom-right .btn-box .thm-btn::after {
+            background-color: #121212;
+        }
+
+        .footer-one__top-subscribe-form button.thm-btn:after {
+            background: #000000;
+        }
+
+        .faq-one__contact-info .btn-box .thm-btn::after {
+            background-color: #000000;
+        }
+
+        .footer-social-link a {
+
+            background: #12191a;
+        }
+
+        .service-one__single-img img {
+            width: 100%;
+            height: 200px;
+            /* Sesuaikan tinggi gambar landscape */
+            object-fit: cover;
+            /* Mengatur gambar agar memenuhi area tanpa mengubah proporsi */
+            object-position: center;
+            /* Fokus gambar di tengah */
+        }
+
+        .img-box img,
+        .img-box2 img {
+            width: 100%;
+            height: 200px;
+            /* Sesuaikan tinggi gambar landscape */
+            object-fit: cover;
+            /* Menjaga proporsi gambar dan menutup area penuh */
+            object-position: center;
+            /* Gambar terpusat */
+        }
     </style>
 </head>
 
@@ -61,7 +99,7 @@
         <!--Start Main Header One -->
         <header class="main-header main-header-one">
             <div id="sticky-header" class="menu-area">
-                <div class="main-header-one__outer">
+                <div class="main-header-one__outer" style="background-color: black; ">
                     <div class="logo-box-one" style="background-color: black; height: 100%;">
                         {{-- <div class="logo-box-one__bg"
                             style="background-image: url({{ asset('themplete/front') }}/assets/img/pattern/logo-box-one-pattern.png);">
@@ -101,8 +139,8 @@
                                                                 </ul>
                                                             </li>
 
-                                                            <li class="menu-item-has-children"><a
-                                                                    href="#">Tentang Kami</a>
+                                                            <li class="menu-item-has-children"><a href="#">Tentang
+                                                                    Kami</a>
                                                                 <ul class="sub-menu">
                                                                     <li><a href="">Profil</a>
                                                                     </li>
@@ -128,9 +166,17 @@
                                                             class="main-menu__search search-toggler icon-magnifying-glass"></a>
                                                     </div>
 
-                                                    <div class="btn-box">
+                                                    {{-- <div class="btn-box">
                                                         <a class="thm-btn" href="">
                                                             <span class="txt">Login / Daftar</span>
+                                                            <i class="fa-solid fa-user"></i>
+                                                        </a>
+                                                    </div> --}}
+                                                    <div class="btn-box">
+                                                        <a class="thm-btn" href=""
+                                                            style="background-color: black; color:white;">
+                                                            <span class="txt" style="color: white">Login /
+                                                                Daftar</span>
                                                             <i class="fa-solid fa-user"></i>
                                                         </a>
                                                     </div>
@@ -188,174 +234,20 @@
 
         @yield('content')
 
-        <footer class="footer-one" style="background-color: black;">
+        <footer class="footer-one" style="background-color: black; ">
             {{-- <div class="footer-one__bg"
                 style="background-image: url(https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1634025439/01gf36esnb7m5jknhf51d2ngrf.jpg);">
             </div> --}}
-            <!-- Start Footer Main -->
-            <div class="footer-main">
-                <div class="container">
 
-                    <div class="footer-one__top">
-                        <div class="footer-one__top-inner">
-                            <div class="logo-box">
-                                <a href="/beranda"><img src="/upload/profil/{{ $profil->logo }}"
-                                        alt="{{ $profil->nama_perusahaan }}" style="width: 100px;"></a>
-                            </div>
-
-                            <div class="footer-one__top-right">
-                                <div class="text">
-                                    <p>Berlangganan buletin mingguan kami untuk mendapatkan informasi dan promosi di
-                                        kotak masuk Anda</p>
-                                </div>
-                                <div class="footer-one__top-subscribe">
-                                    <form class="footer-one__top-subscribe-form" action="#">
-                                        <input type="email" name="email" placeholder="Masukkan Email" style="background-color: rgb(44, 41, 41); color:white;">
-                                        <button type="submit" class="thm-btn">
-                                            <span class="txt">Berlangganan </span> <i
-                                                class="icon-up-right-arrow"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="footer-main__bottom">
-                        <div class="row">
-                            <!--Start Single Footer Widget-->
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".1s">
-                                <div class="single-footer-widget footer-widget__about">
-                                    <div class="title">
-                                        <h2>Tentang {{ $profil->nama_perusahaan }}</h2>
-                                    </div>
-
-                                    <div class="footer-widget__about-inner">
-                                        <p class="text1">{{ $profil->deskripsi_3 }}</p>
-                                        <p class="text2">Jam Kerja</p>
-                                        <p class="text3">Senin-Sabtu: 08:00 - 16:00 WIB</p>
-
-                                        <div class="footer-social-link">
-                                            <a href="{{ $profil->facebook }}"><span class="icon-facebook"></span></a>
-                                            <a href="{{ $profil->twitter }}"><span class="icon-twitter"></span></a>
-                                            <a href="{{ $profil->instagramlinkedin }}"><span
-                                                    class="icon-instagram"></span></a>
-                                            <a href="{{ $profil->email }}"><span class="icon-linkedin"></span></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!--End Single Footer Widget-->
-
-                            <!--Start Single Footer Widget-->
-                            <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                                <div class="single-footer-widget footer-widget__links">
-                                    <div class="title">
-                                        <h2>Link</h2>
-                                    </div>
-
-                                    <div class="footer-widget__links-box">
-                                        <ul>
-                                            <li><a href="{{ asset('themplete/front') }}/about.html">Berita & Acara</a>
-                                            </li>
-                                            <li><a href="{{ asset('themplete/front') }}/about.html">Profil</a></li>
-                                            <li><a href="{{ asset('themplete/front') }}/about.html">Karir</a></li>
-                                            <li><a href="{{ asset('themplete/front') }}/about.html">Informasi
-                                                    Paket</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!--End Single Footer Widget-->
-
-                            <!--Start Single Footer Widget-->
-                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                                <div class="single-footer-widget footer-widget__links services">
-                                    <div class="title">
-                                        <h2>Layanan Kami</h2>
-                                    </div>
-
-                                    <div class="footer-widget__links-box">
-                                        <ul>
-                                            @foreach ($layanan as $p)
-                                                <li><a
-                                                        href="https://wa.me/{{ $profil->no_wa }}">{{ $p->nama_layanan }}</a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!--End Single Footer Widget-->
-
-                            <!--Start Single Footer Widget-->
-                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                <div class="single-footer-widget footer-widget__contact">
-                                    <div class="title">
-                                        <h2>Informasi</h2>
-                                    </div>
-
-                                    <div class="footer-widget__contact-box">
-                                        <ul>
-                                            <li>
-                                                <div class="icon-box">
-                                                    <span class="icon-pin"></span>
-                                                </div>
-
-                                                <div class="content-box">
-                                                    <p>Alamat</p>
-                                                    <h4>{{ $profil->alamat }}</h4>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="icon-box">
-                                                    <span class="icon-paper-plane"></span>
-                                                </div>
-
-                                                <div class="content-box">
-                                                    <p>Email</p>
-                                                    <h4><a
-                                                            href="mailto:{{ $profil->email }}">{{ $profil->email }}</a>
-                                                    </h4>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="icon-box">
-                                                    <span class="icon-out-call"></span>
-                                                </div>
-
-                                                <div class="content-box">
-                                                    <p>No Telp</p>
-                                                    <h4><a
-                                                            href="tel:{{ $profil->no_telp }}">{{ $profil->no_telp }}</a>
-                                                    </h4>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!--End Single Footer Widget-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Footer Main -->
 
             <!--Start Footer Bottom -->
-            <div class="footer-bottom">
+            <div class="footer-bottom" style="background-color: #12191a;">
                 <div class="container">
                     <div class="footer-bottom__inner">
                         <div class="copyright-text">
-                            <p>© 2024 <a href="{{ asset('themplete/front') }}/index.html">{{ $profil->nama_perusahaan }}</a> All Rights
+                            <p>© 2024 <a
+                                    href="{{ asset('themplete/front') }}/index.html">{{ $profil->nama_perusahaan }}</a>
+                                All Rights
                                 Reserved.</p>
                         </div>
 
