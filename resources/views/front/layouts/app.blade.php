@@ -60,7 +60,13 @@
             object-position: center;
             /* Fokus gambar di tengah */
         }
+        .service-one__single:after {
+            background-color:  black;
+        }
+        .service-one__single:hover:after {
+            background-color: #12191a ;
 
+}
         .img-box img,
         .img-box2 img {
             width: 100%;
