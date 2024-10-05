@@ -622,9 +622,9 @@
 
     <!--Start Request Services One-->
     <section class="request-services-one" style="margin-top:-120px;">
-        <div class="request-services-one__bg"
+        {{-- <div class="request-services-one__bg"
             style="background-image: url(assets/img/background/request-services-v1-bg.jpg);"></div>
-        <div class="shape1 float-bob-y"><img src="assets/img/shape/request-services-v1-shape1.png" alt=""></div>
+        <div class="shape1 float-bob-y"><img src="assets/img/shape/request-services-v1-shape1.png" alt=""></div> --}}
         <div class="container">
 
             <div class="request-services-one__top">
