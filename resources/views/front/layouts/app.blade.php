@@ -60,13 +60,16 @@
             object-position: center;
             /* Fokus gambar di tengah */
         }
-        .service-one__single:after {
-            background-color:  black;
-        }
-        .service-one__single:hover:after {
-            background-color: #12191a ;
 
-}
+        .service-one__single:after {
+            background-color: black;
+        }
+
+        .service-one__single:hover:after {
+            background-color: #12191a;
+
+        }
+
         .img-box img,
         .img-box2 img {
             width: 100%;
@@ -76,6 +79,25 @@
             /* Menjaga proporsi gambar dan menutup area penuh */
             object-position: center;
             /* Gambar terpusat */
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #ffd550;
+            background-clip: border-box;
+            border: 0px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+        }
+
+        .page-item.active .page-link {
+            z-index: 3;
+            color: #fff;
+            background-color: black;
+            border-color: black;
         }
     </style>
 </head>

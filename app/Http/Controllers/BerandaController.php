@@ -26,22 +26,13 @@ class BerandaController extends Controller
         $alasan = Alasan::orderBy('urutan', 'asc')->get();
         $faq = Faq::orderBy('urutan', 'asc')->get();
         $kategoriBerita = KategoriBerita::all();
+        $berita = Berita::orderBy('id', 'desc')->paginate(4)->withQueryString();
+        $berita2 = Berita::orderBy('id', 'desc')->take(2)->get();
 
-        // Jika ada parameter kategori_id, tampilkan berita berdasarkan kategori tersebut
-        if ($request->has('kategori_id')) {
-            $berita = Berita::where('kategori_berita_id', $request->kategori_id)->get();
-        } else {
-            // Jika tidak ada kategori yang dipilih, ambil berita dari kategori pertama (default)
-            $kategoriPertama = KategoriBerita::first();
-            if ($kategoriPertama) {
-                $berita = Berita::where('kategori_berita_id', $kategoriPertama->id)->get();
-            } else {
-                // Jika tidak ada kategori, ambil semua berita sebagai fallback
-                $berita = Berita::all();
-            }
-        }
 
-        return view('front.beranda', compact('title', 'subtitle', 'slider', 'layanan', 'mitra', 'berita', 'faq',  'tahap','alasan', 'kategoriBerita'));
+
+
+        return view('front.beranda', compact('title', 'subtitle', 'slider', 'layanan', 'mitra', 'berita', 'berita2', 'faq',  'tahap','alasan', 'kategoriBerita'));
     }
 
     public function halaman_berita()
