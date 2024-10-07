@@ -50,21 +50,21 @@
                                 <h3>Informasi Umum :</h3>
                             </div>
                             <div class="row">
-                                <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="col-xl-12 col-lg-12 col-md-12">
                                     <div class="input-box">
                                         <label>Nama Lengkap</label>
                                         <input type="text" name="nama_lengkap" value=""
                                             placeholder="Ronald Richards" required="">
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="col-xl-12 col-lg-12 col-md-12">
                                     <div class="input-box">
                                         <label>Email</label>
                                         <input type="email" name="email" value=""
                                             placeholder="ronald@gmail.com" required="">
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="col-xl-12 col-lg-12 col-md-12">
                                     <div class="input-box">
                                         <label>Password</label>
                                         <input type="text" placeholder="Password"
@@ -84,7 +84,7 @@
                                 <div class="col-xl-12 col-lg-12 col-md-12">
                                     <div class="input-box">
                                         <label>Alamat</label>
-                                        <textarea class="form-control" name="alamat" id="" cols="10" rows="1" ></textarea>
+                                        <textarea class="form-control" name="alamat" id="" style="height: 80px;"></textarea>
                                     </div>
                                 </div>
 
@@ -95,14 +95,14 @@
                               
                             
 
-                              <div class="col-xl-4 col-lg-4 col-md-4">
+                              <div class="col-xl-12 col-lg-12 col-md-12">
                                   <div class="input-box">
                                       <label>No WhatsApp</label>
                                       <input type="text" placeholder="085-xxx-xxx-xxx" name="no_wa">
                                   </div>
                               </div>
 
-                              <div class="col-xl-4 col-lg-4 col-md-4">
+                              <div class="col-xl-12 col-lg-12 col-md-12">
                                   <div class="input-box">
                                       <label>Jenis Kelamin</label>
                                       <div class="select-box">
@@ -114,7 +114,7 @@
                                   </div>
                               </div>
 
-                              <div class="col-xl-4 col-lg-4 col-md-4">
+                              <div class="col-xl-12 col-lg-12 col-md-12">
                                   <div class="input-box">
                                       <label>Tanggal Lahir</label>
                                       <input type="date" class="form-control wide" placeholder="" name="tanggal_lahir" style="padding: .75rem .75rem;">
@@ -122,7 +122,7 @@
                               </div>
 
 
-                              <div class="col-xl-4 col-lg-4 col-md-4">
+                              <div class="col-xl-12 col-lg-12 col-md-12">
                                   <div class="input-box">
                                       <label>Kategori Konsumen</label>
                                       <div class="select-box">
@@ -133,13 +133,13 @@
                                       </div>
                                   </div>
                               </div>
-                              <div class="col-xl-4 col-lg-4 col-md-4">
+                              <div class="col-xl-12 col-lg-12 col-md-12">
                                   <div class="input-box">
                                       <label>Nama Perusahaan</label>
                                       <input type="text" placeholder="Artaboga" name="nama_perusahaan">
                                   </div>
                               </div>
-                              <div class="col-xl-4 col-lg-4 col-md-4">
+                              <div class="col-xl-12 col-lg-12 col-md-12">
                                   <div class="input-box">
                                       <label>Kode Referal</label>
                                       <input type="text" placeholder="324355" name="kode_referal">
