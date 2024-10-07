@@ -49,12 +49,84 @@
                             <div class="title-box">
                                 <h3>Informasi Umum :</h3>
                             </div>
+
                             <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12" style="padding-bottom: 10px;">
+                                    <div class="input-box">
+                                        <label>Kategori Konsumen</label>
+                                        <div class="select-box">
+                                            <select class="selectmenu wide" name="kategori_konsumen" id="kategori_konsumen">
+                                                <option value="personal" selected="selected">Personal</option>
+                                                <option value="corporate">Corporate</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12 col-lg-12 col-md-12" id="nama_perusahaan_box" style="display: none;">
+                                    <div class="input-box">
+                                        <label>Nama Perusahaan</label>
+                                        <input type="text" placeholder="Artaboga" name="nama_perusahaan">
+                                    </div>
+                                </div>
+
+                                <!-- jQuery CDN (gunakan jika belum ada jQuery di proyek Anda) -->
+                                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+                                <script>
+                                    $(document).ready(function() {
+                                        // Ketika dropdown berubah
+                                        $('#kategori_konsumen').change(function() {
+                                            // Cek jika pilihan adalah "corporate"
+                                            if ($(this).val() === 'corporate') {
+                                                // Tampilkan input nama perusahaan
+                                                $('#nama_perusahaan_box').show();
+                                            } else {
+                                                // Sembunyikan input nama perusahaan
+                                                $('#nama_perusahaan_box').hide();
+                                            }
+                                        });
+
+                                        // Menyembunyikan nama perusahaan pada awal jika bukan corporate
+                                        if ($('#kategori_konsumen').val() !== 'corporate') {
+                                            $('#nama_perusahaan_box').hide();
+                                        }
+                                    });
+                                </script>
+
+
+
                                 <div class="col-xl-12 col-lg-12 col-md-12">
                                     <div class="input-box">
                                         <label>Nama Lengkap</label>
                                         <input type="text" name="nama_lengkap" value=""
                                             placeholder="Ronald Richards" required="">
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12 col-lg-12 col-md-12" style="padding-bottom: 10px;">
+                                    <div class="input-box">
+                                        <label>Jenis Kelamin</label>
+                                        <div class="select-box">
+                                            <select class="selectmenu wide" name="jenis_kelamin">
+                                                <option selected="selected">Pria</option>
+                                                <option>Wanita</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <div class="input-box">
+                                        <label>Tanggal Lahir</label>
+                                        <input type="date" class="form-control wide" placeholder="" name="tanggal_lahir" style="padding: .75rem .75rem;">
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <div class="input-box">
+                                        <label>No WhatsApp</label>
+                                        <input type="text" placeholder="085-xxx-xxx-xxx" name="no_wa">
                                     </div>
                                 </div>
                                 <div class="col-xl-12 col-lg-12 col-md-12">
@@ -64,10 +136,24 @@
                                             placeholder="ronald@gmail.com" required="">
                                     </div>
                                 </div>
+
+                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <div class="input-box">
+                                        <label>Alamat</label>
+                                        <textarea class="form-control" name="alamat" id="" style="height: 80px;"></textarea>
+                                    </div>
+                                </div>
                                 <div class="col-xl-12 col-lg-12 col-md-12">
                                     <div class="input-box">
                                         <label>Password</label>
                                         <input type="text" placeholder="Password"
+                                            name="password">
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <div class="input-box">
+                                        <label>Konfirmasi Password</label>
+                                        <input type="text" placeholder="Ulangi Password"
                                             name="password">
                                     </div>
                                 </div>
@@ -77,79 +163,11 @@
 
                             </div>
 
-                            <div class="row">
-                              
-                             
-
-                                <div class="col-xl-12 col-lg-12 col-md-12">
-                                    <div class="input-box">
-                                        <label>Alamat</label>
-                                        <textarea class="form-control" name="alamat" id="" style="height: 80px;"></textarea>
-                                    </div>
-                                </div>
 
 
-                            </div>
 
-                            <div class="row">
-                              
-                            
-
-                              <div class="col-xl-12 col-lg-12 col-md-12">
-                                  <div class="input-box">
-                                      <label>No WhatsApp</label>
-                                      <input type="text" placeholder="085-xxx-xxx-xxx" name="no_wa">
-                                  </div>
-                              </div>
-
-                              <div class="col-xl-12 col-lg-12 col-md-12">
-                                  <div class="input-box">
-                                      <label>Jenis Kelamin</label>
-                                      <div class="select-box">
-                                          <select class="selectmenu wide" name="jenis_kelamin">
-                                              <option selected="selected">Pria</option>
-                                              <option>Wanita</option>
-                                          </select>
-                                      </div>
-                                  </div>
-                              </div>
-
-                              <div class="col-xl-12 col-lg-12 col-md-12">
-                                  <div class="input-box">
-                                      <label>Tanggal Lahir</label>
-                                      <input type="date" class="form-control wide" placeholder="" name="tanggal_lahir" style="padding: .75rem .75rem;">
-                                  </div>
-                              </div>
-
-
-                              <div class="col-xl-12 col-lg-12 col-md-12">
-                                  <div class="input-box">
-                                      <label>Kategori Konsumen</label>
-                                      <div class="select-box">
-                                          <select class="selectmenu wide" name="kategori_konsumen">
-                                              <option selected="selected">Personal</option>
-                                              <option>Corporate</option>
-                                          </select>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-xl-12 col-lg-12 col-md-12">
-                                  <div class="input-box">
-                                      <label>Nama Perusahaan</label>
-                                      <input type="text" placeholder="Artaboga" name="nama_perusahaan">
-                                  </div>
-                              </div>
-                              <div class="col-xl-12 col-lg-12 col-md-12">
-                                  <div class="input-box">
-                                      <label>Kode Referal</label>
-                                      <input type="text" placeholder="324355" name="kode_referal">
-                                  </div>
-                              </div>
-
-
-                          </div>
                         </div>
- 
+
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6">
                                 <div class="request-services-one__form-btn">
