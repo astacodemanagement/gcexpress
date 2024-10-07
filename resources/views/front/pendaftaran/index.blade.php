@@ -157,6 +157,13 @@
                                             name="password">
                                     </div>
                                 </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <div class="input-box">
+                                        <label>Kode Referal</label>
+                                        <input type="text" placeholder="Kode Referal"
+                                            name="kode_referal">
+                                    </div>
+                                </div>
 
 
 
