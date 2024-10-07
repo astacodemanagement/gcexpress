@@ -40,9 +40,19 @@ class BerandaController extends Controller
         $title = "Halaman Berita";
         $subtitle = "Menu Berita";
 
+        
+
+        return view('front.pendaftaran.index', compact('title', 'subtitle'));
+    }
+
+    public function pendaftaran()
+    {
+        $title = "Halaman Pendaftaran";
+        $subtitle = "Menu Pendaftaran";
+
         $berita = Berita::with('kategoriBerita')->orderBy('id', 'desc')->paginate(10);
 
-        return view('front.berita.index', compact('title', 'subtitle', 'berita'));
+        return view('front.pendaftaran.index', compact('title', 'subtitle', 'berita'));
     }
 
 

@@ -34,3 +34,4 @@ Route::resource('/kelebihan', KelebihanController::class);
 Route::resource('/kategori_berita', KategoriBeritaController::class);
 Route::resource('/berita', BeritaController::class);
 Route::get('/halaman_berita', [BerandaController::class, 'halaman_berita']);
+Route::get('/pendaftaran', [BerandaController::class, 'pendaftaran']);
