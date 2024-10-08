@@ -161,6 +161,14 @@
                                         <span class="hide-menu">Mitra</span>
                                     </a>
                                 </li>
+                                <li class="sidebar-item">
+                                    <a href="/dokumentasi" class="sidebar-link">
+                                        <div class="round-16 d-flex align-items-center justify-content-center">
+                                            <i class="ti ti-circle"></i>
+                                        </div>
+                                        <span class="hide-menu">Dokumentasi</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         <li class="sidebar-item">

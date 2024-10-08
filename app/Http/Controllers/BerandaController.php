@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Alasan;
 use App\Models\Berita;
+use App\Models\Dokumentasi;
 use App\Models\Faq;
 use App\Models\KategoriBerita;
 use App\Models\Layanan;
@@ -65,6 +66,15 @@ class BerandaController extends Controller
 
 
         return view('front.login.index', compact('title', 'subtitle'));
+    }
+
+    public function dokumentasi_umum()
+    {
+        $title = "Halaman Dokumentasi";
+        $subtitle = "Menu Dokumentasi";
+        $dokumentasi = Dokumentasi::orderBy('urutan', 'asc')->get();
+
+        return view('front.dokumentasi.index', compact('title', 'subtitle','dokumentasi'));
     }
 
 
