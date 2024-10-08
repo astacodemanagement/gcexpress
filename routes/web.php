@@ -19,8 +19,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('back.dashboard');
 // });
 
-Route::resource('/', DashboardController::class);
-Route::resource('/beranda', BerandaController::class);
+Route::resource('/', BerandaController::class);
+Route::resource('/dashboard', DashboardController::class);
 Route::resource('/profil_umum', ProfilController::class);
 Route::put('/profil/{id}', [ProfilController::class, 'update'])->name('profil.update');
 Route::resource('/users', UserController::class);
@@ -34,4 +34,7 @@ Route::resource('/kelebihan', KelebihanController::class);
 Route::resource('/kategori_berita', KategoriBeritaController::class);
 Route::resource('/berita', BeritaController::class);
 Route::get('/halaman_berita', [BerandaController::class, 'halaman_berita']);
+Route::get('/login', [BerandaController::class, 'login']);
 Route::get('/pendaftaran', [BerandaController::class, 'pendaftaran']);
+Route::post('/pendaftaran/store', [BerandaController::class, 'store'])->name('pendaftaran.store');
+

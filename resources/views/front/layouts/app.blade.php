@@ -150,7 +150,7 @@
                                                 <div class="main-header-one__bottom-left">
                                                     <div class="navbar-wrap main-menu">
                                                         <ul class="navigation">
-                                                            <li class="active"><a href="/beranda">Beranda</a>
+                                                            <li class="active"><a href="/">Beranda</a>
                                                             </li>
                                                             <li><a href="/layanan">Cek Resi</a>
                                                             </li>
@@ -194,14 +194,9 @@
                                                             class="main-menu__search search-toggler icon-magnifying-glass"></a>
                                                     </div>
 
-                                                    {{-- <div class="btn-box">
-                                                        <a class="thm-btn" href="">
-                                                            <span class="txt">Login / Daftar</span>
-                                                            <i class="fa-solid fa-user"></i>
-                                                        </a>
-                                                    </div> --}}
+                                               
                                                     <div class="btn-box">
-                                                        <a class="thm-btn" href=""
+                                                        <a class="thm-btn" href="/login"
                                                             style="background-color: black; color:white;">
                                                             <span class="txt" style="color: white">Login /
                                                                 Daftar</span>
@@ -220,7 +215,7 @@
                                 <nav class="menu-box">
                                     <div class="close-btn"><i class="fas fa-times"></i></div>
                                     {{-- <div class="nav-logo">
-                                        <a href="/beranda">
+                                        <a href="/">
                                             <img src="/upload/profil/{{ $profil->logo }}" alt="Logo" >
                                         </a>
                                     </div> --}}

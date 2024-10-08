@@ -78,7 +78,7 @@
         <div class="footer-one__top">
             <div class="footer-one__top-inner">
                 <div class="logo-box">
-                    {{-- <a href="/beranda"><img src="https://313express.com/images/artikel/1661480137115.png"
+                    {{-- <a href="/"><img src="https://313express.com/images/artikel/1661480137115.png"
                             alt="{{ $profil->nama_perusahaan }}" style="width: 100px;"></a> --}}
                 </div>
 
@@ -872,7 +872,7 @@
             <div class="footer-one__top">
                 <div class="footer-one__top-inner">
                     <div class="logo-box">
-                        <a href="/beranda"><img src="/upload/profil/{{ $profil->logo }}"
+                        <a href="/"><img src="/upload/profil/{{ $profil->logo }}"
                                 alt="{{ $profil->nama_perusahaan }}" style="width: 100px;"></a>
                     </div>
 
