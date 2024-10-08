@@ -277,12 +277,12 @@
 
                         <div class="copyright-menu">
                             <ul>
-                                <li><a href="{{ asset('themplete/front') }}/about.html">Trams &amp; Condition <span
+                                <li><a href="/dokumentasi_umum">Trams &amp; Condition <span
                                             class="icon-right-arrow-5"></span></a></li>
-                                <li><a href="{{ asset('themplete/front') }}/about.html">Privacy Policy <span
+                                <li><a href="/dokumentasi_umum">Privacy Policy <span
                                             class="icon-right-arrow-5"></span></a>
                                 </li>
-                                <li><a href="{{ asset('themplete/front') }}/about.html">Support <span
+                                <li><a href="/dokumentasi_umum">Support <span
                                             class="icon-right-arrow-5"></span></a></li>
                             </ul>
                         </div>
