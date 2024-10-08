@@ -251,7 +251,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="/beranda" aria-expanded="false" target="_blank">
+                            <a class="sidebar-link" href="/" aria-expanded="false" target="_blank">
                                 <span>
                                     <i class="ti ti-globe"></i>
                                 </span>
